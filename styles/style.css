@@ -3,7 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
 
+    --style-font : "Lobster Two", cursive;
+    --title-font : 'Rubik', sans-serif;
+    --primary-color : #EB0029;
+}
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -265,10 +270,158 @@ body {
 /* food-list styles */
 
 .food-lists {
-    margin: 80px 0;
-    display: grid;
-    grid-auto
+    background-color: #FAF7F2;
+    padding: 80PX 60px;
 }
+.food-lists-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 60px;
+}
+.food-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.food-img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.food-img img {
+    width: 70%;
+}
+
+    /* ------------------
+    quality-fast-foods
+    --------------------- */
+.quality-fast-foods {
+    padding: 80px 60px;
+}
+
+.quality-fast-foods-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.quality-food-images {
+    flex-basis: 56%;
+    position: relative;
+}
+
+.exp {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+
+}
+
+.exp >p {
+    font-size: 72px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-right: 15px;
+}
+
+.exp-info p{
+    font-size: 24px;
+    font-weight: 600;
+}
+.exp-info p span{
+    font-weight: 400;
+    color: rgb(38, 38, 38);
+}
+
+
+.quality-food-images img {
+    width: 100%;
+}
+
+.quality-food-info {
+    flex-basis: 40%;
+    padding: 10px;
+}
+
+.q_f_i_about {
+    font-family: var(--style-font);
+    color: var(--primary-color);
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.q_f_i_about img {
+    margin-right: 10px;
+}
+
+.quality-food-title {
+    font-family: var(--title-font);
+    font-size: 36px;
+    margin: 10px 0 20px;
+}
+
+.quality-food-des {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.quality-food-fituars {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.as-btn {
+    margin: 25px 0;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+    border: none;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    padding: 21px 35px 20px;
+    border-radius: 999px;
+    transition: all .5s linear;
+    text-decoration: none;
+}
+.as-btn:hover {
+    background-color: black;
+}
+.as-btn::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    left: 0%;
+    width: 0;
+    background-color: black;
+    z-index: -1;
+    transition: all .5s;
+    border-radius: inherit;
+}
+.as-btn:hover:before {
+    width: 100%;
+    left: 0%;
+}
+
 
 
 
@@ -303,6 +456,46 @@ body {
 
 .cart-section {
     display: none;
+}
+
+.food-lists-container {
+    grid-template-columns: repeat(1, 1fr);
+    
+}
+
+.quality-fast-foods-container {
+    flex-direction: column;
+}
+
+.quality-food-info {
+    margin-top: 10px;
+}
+
+.quality-fast-foods{
+    padding: 80px 20px;
+}
+
+
+
+.exp >p {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-right: 5px;
+}
+
+.exp-info p{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.exp {
+    position: absolute;
+    right: 0px;
+    bottom: 5px;
+    display: flex;
+    align-items: center;
+
 }
 
 }
