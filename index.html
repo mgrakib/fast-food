@@ -38,18 +38,18 @@
                     <li class="hambar-menu-item">
                         <div class="hambar-submenu">
                             <a href=""><span><i class="fa-solid fa-chevron-right"></i> HOME </span> </a>
-                            <i class="fa-solid fa-plus"></i>
+                            <i class="fa-solid fa-plus" onclick="showHamsubH()"></i>
                         </div>
 
                         <!-- hambar-submenu section -->
-                        <ul class="hambar-submenu-items">
+                        <ul class="hambar-submenu-items" id="hambarSubmenuItemsH">
                                 <li class="hambar-submenu-item"><a href=""><i class="fa-solid fa-utensils"></i> Restaurant Home</a></li>
 
                                 <li class="hambar-submenu-item"><a href=""><i class="fa-solid fa-utensils"></i> Fast Food Home</a></li>
                                 
-                                <li class="submenu-item"><a href=""><i class="fa-solid fa-utensils"></i> Pizza and Burger Light Home</a></li>
+                                <li class="hambar-submenu-item"><a href=""><i class="fa-solid fa-utensils"></i> Pizza and Burger Light Home</a></li>
 
-                                <li class="submenu-item"><a href=""><i class="fa-solid fa-utensils"></i> Pizza and Burger Dark Home</a></li>
+                                <li class="hambar-submenu-item"><a href=""><i class="fa-solid fa-utensils"></i> Pizza and Burger Dark Home</a></li>
                             </ul>
                     </li>
 
@@ -58,29 +58,64 @@
                             <a href=""><span><i class="fa-solid fa-chevron-right"></i> ABOUT US </span></a>
                         </div>
                     </li>
+
                     <li class="hambar-menu-item">
                         <div class="hambar-submenu">
-                            <a href=""><span><i class="fa-solid fa-chevron-right"></i> MENU </span> </a> <i class="fa-solid fa-plus"></i>
+                            <a href=""><span><i class="fa-solid fa-chevron-right"></i> MENU </span> </a> <i class="fa-solid fa-plus" onclick="showHamsubM()"></i>
                         </div>
+
+                         <!-- hambar-submenu section -->
+                        <ul class="hambar-submenu-items" id="hambarSubmenuItemsM">
+                                <li class="hambar-submenu-item"><a href=""><i class="fa-solid fa-utensils"></i> Restaurant Home</a></li>
+
+                                <li class="hambar-submenu-item"><a href=""><i class="fa-solid fa-utensils"></i> Fast Food Home</a></li>                            
+                        </ul>
                     </li>
+
                     <li class="hambar-menu-item">
                         <div class="hambar-submenu">
-                            <a href=""><span><i class="fa-solid fa-chevron-right"></i> SHOP </span> </a> <i class="fa-solid fa-plus"></i>
+                            <a href=""><span><i class="fa-solid fa-chevron-right"></i> SHOP </span> </a> <i class="fa-solid fa-plus" onclick="showHamsubS()"></i>
                         </div>
+
+                         <!-- hambar-submenu section -->
+                        <ul class="hambar-submenu-items" id="hambarSubmenuItemsS">
+                                <li class="hambar-submenu-item"><a href=""><i class="fa-solid fa-utensils"></i> Restaurant Home</a></li>
+
+                                <li class="hambar-submenu-item"><a href=""><i class="fa-solid fa-utensils"></i> Fast Food Home</a></li>                            
+                        </ul>
                     </li>
+
                     <li class="hambar-menu-item">
                         <div class="hambar-submenu">
-                            <a href=""><span><i class="fa-solid fa-chevron-right"></i> PAGES </span> </a> <i class="fa-solid fa-plus"></i>
+                            <a href=""><span><i class="fa-solid fa-chevron-right"></i> PAGES </span> </a> <i class="fa-solid fa-plus" onclick="showHamsubP()"></i>
                         </div>
+                        <!-- hambar-submenu section -->
+                        <ul class="hambar-submenu-items" id="hambarSubmenuItemsP">
+                                <li class="hambar-submenu-item"><a href=""><i class="fa-solid fa-utensils"></i> Restaurant Home</a></li>
+
+                                <li class="hambar-submenu-item"><a href=""><i class="fa-solid fa-utensils"></i> Fast Food Home</a></li>
+                                
+                                <li class="hambar-submenu-item"><a href=""><i class="fa-solid fa-utensils"></i> Pizza and Burger Light Home</a></li>
+
+                                <li class="hambar-submenu-item"><a href=""><i class="fa-solid fa-utensils"></i> Pizza and Burger Dark Home</a></li>
+                        </ul>
                     </li>
+
                     <li class="hambar-menu-item">
                         <div class="hambar-submenu">
-                            <a href=""><span><i class="fa-solid fa-chevron-right"></i> BLOG </span> </a> <i class="fa-solid fa-plus"></i>
+                            <a href=""><span><i class="fa-solid fa-chevron-right"></i> BLOG </span> </a> <i class="fa-solid fa-plus" onclick="showHamsubB()"></i>
                         </div>
+                        <ul class="hambar-submenu-items" id="hambarSubmenuItemsB">
+                                <li class="hambar-submenu-item"><a href=""><i class="fa-solid fa-utensils"></i> Restaurant Home</a></li>
+
+                                <li class="hambar-submenu-item"><a href=""><i class="fa-solid fa-utensils"></i> Fast Food Home</a></li>
+                              
+                        </ul>
                     </li>
+
                     <li class="hambar-menu-item">
                         <div class="hambar-submenu">
-                            <a href=""><span><i class="fa-solid fa-chevron-right"></i> CONTACT </span> </a> <i class="fa-solid fa-plus"></i>
+                            <a href=""><span><i class="fa-solid fa-chevron-right"></i> CONTACT </span> </a>
                         </div>
                     </li>
 
@@ -88,10 +123,6 @@
             </div>
 
         </div>
-        
-
-
-
 
         <!-- general  -->
         <div class="one-row">
@@ -150,7 +181,7 @@
 
 
             <!-- cart-btn -->
-            <div class="cart-section ">
+            <div class="cart-section">
                 <div><i class="fa-solid fa-magnifying-glass"></i></div>
                 <div><i class="fa-solid fa-cart-shopping"></i></div>
             </div>
@@ -162,6 +193,17 @@
         
     </header>
 
+<!-- bannar  -->
+    <section class="bannar">
+
+    </section>
+
+<!-- ---food-list---- -->
+    <section class="food-lists">
+        <div class="one-row">
+            .food-li
+        </div>
+    </section>
 
 <script src="./js/script.js"></script>
 </body>

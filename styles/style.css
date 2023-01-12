@@ -6,8 +6,6 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    width: 100%;
-    overflow: hidden;
 }
 
 .header {
@@ -24,7 +22,7 @@ body {
     background-color: #FFFFFF;
     position: absolute;
     top: 0;
-    left: 0;
+    left: -100%;
     border-right: 2px solid #EB0029;
     /* display: none; */
     box-shadow: 0px -10px 10px 2px rgba(0, 0, 0, 0.509);
@@ -110,10 +108,24 @@ body {
     list-style: none;
     padding: 15px;
     display: none;
+    transition: all .7s linear;
+    position:relative;
+    background-color: #EB0029;
+    border-radius: 5px;
+    
 }
 
 .hambar-submenu-item {
     padding: 10px 0;
+    position:relative;
+}
+
+.hambar-submenu-item i {
+    margin-right: 10px;
+}
+
+.hambar-menu-item .hambar-submenu-items .hambar-submenu-item a {
+    font-size: 12px;
 }
 /* ----------------- hambar style end ------------- */
 
@@ -122,7 +134,7 @@ body {
 
 
 
-/* --------- header -------------- */
+/* --------- header general-------------- */
 .one-row {
     display: flex;
     justify-content: space-between;
@@ -205,10 +217,6 @@ body {
 }
 
 
-
-
-
-
 .cart-section{
     display: flex;
     gap: 15px;
@@ -245,6 +253,27 @@ body {
 
 
 
+/* bannar styles */
+.bannar {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/images/hero_bg_3_3.png);
+    background-position: center;
+    background-size: cover;
+}
+
+/* food-list styles */
+
+.food-lists {
+    margin: 80px 0;
+    display: grid;
+    grid-auto
+}
+
+
+
+
+
 @media screen and (max-width: 576px) {
    
    .logo {
@@ -272,6 +301,9 @@ body {
     display: block;
 }
 
+.cart-section {
+    display: none;
+}
 
 }
 
