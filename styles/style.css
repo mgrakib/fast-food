@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    overflow: hidden;
+}
+
+.header {
+    padding:  10px 20px;
+    width: 100%;
+    position: relative;
+}
+
+
+/* ---------------hambar section style ---------------------*/
+.hambar-section {
+    height: 100vh;
+    min-width: 250px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-right: 2px solid #EB0029;
+    display: none;
+    box-shadow: 0px -10px 10px 2px rgba(0, 0, 0, 0.509);
+    transition: all .8s;
+}
+
+.hambar-close {
+    width: 25px;
+    height: 25px;
+    background-color: #EB0029;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: white;
+    position: absolute;
+    right: -10px;
+    top: 25px;
+    box-shadow: 0px 0px 4px 0 rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.hambar-section .logo {
+    background-color: #E8F8F9;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hambar-section .logo img {
+    width: 70%;
+}
+
+.hambar-nav ul {
+    padding: 20px;
+    list-style: none;
+    margin-top: 20px;
+}
+.hambar-nav ul li {
+    padding: 15px 0;
+    border-bottom: .5px solid rgba(92, 92, 92, 0.187);
+}
+
+
+.hambar-nav ul li a {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+.hambar-nav ul li a span i {
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.hambar-nav ul li a> i {
+    
+    background-color: #c3c3c36b;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+/* ----------------- hambar style end ------------- */
+
+
+
+
+
+
+/* --------- header -------------- */
+.one-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+
+.logo {
+    flex-basis: 150px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.nav {
+    text-align: center;
+}
+
+.nav .menu-items {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav .menu-items .menu-item {
+    padding: 37px 15px;
+    cursor: pointer;
+    margin: 0 1px;
+    position: relative;
+}
+
+.nav .menu-items .menu-item a {
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+    transition: all .2s ;
+}
+
+.nav .menu-items .menu-item > a i {
+    color: #EB0029;
+}
+.nav .menu-items .menu-item:hover> a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #EB0029;
+}
+
+
+/* submenu style */
+.submenu-items {
+    padding: 20px 25px;
+    background-color: #FFFFFF;
+    text-align: left;
+    list-style: none;
+    position: absolute;
+    min-width: 290px;
+    top: 120%;
+    transition: all .5s;
+    opacity: 0;
+    box-shadow: 0 2px 5px 0 rgba(128, 128, 128, 0.483);
+    border-radius: 5px;
+    visibility: hidden;
+}
+.menu-item:hover .submenu-items {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+}
+.submenu-item {
+    padding: 10px 0;
+}
+.nav .menu-items .submenu-item:hover a{
+    color: #EB0029;
+}
+.nav .menu-items .submenu-item a i{
+    color: #EB0029;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+.cart-section{
+    display: flex;
+    gap: 15px;
+}
+
+.cart-section div {
+    width: 60px;
+    height: 60px;
+    background-color:rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: .5px solid rgba(128, 128, 128, 0.339);
+    box-shadow: 0 0 5px 2px rgba(128, 128, 128, 0.184);
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.cart-btn i {
+    color: black;
+}
+.cart-section  div:hover i {
+    color: white;
+}
+.cart-section div:hover {
+   background-color:#EB0029;
+}
+
+.bar {
+    display: none;
+}
+
+
+
+
+@media screen and (max-width: 576px) {
+   
+   .logo {
+    flex-basis: 45%;
+}
+   
+    .nav {
+    display: none;
+    }
+
+    .bar {
+    display: flex;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-color: #EB0029;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 5px;
+
+}
+
+.hambar-section {
+    display: block;
+}
+
+
+}
+
+
+
+
+.hide {
+    display:  none;
+}
