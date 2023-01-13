@@ -729,10 +729,10 @@ body {
     background-size: cover;
 }
 
-.special_food_subtilte {
+.section_subtilte {
     font-family: var(--style-font);
     color: #EB0029;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
 }
 
@@ -780,24 +780,141 @@ body {
     
 }
 
+/*  <!-- --------------------------
+ *****************************
+    See The  Menu Board
+*****************************
+-------------------------- --> */
+
+.menu_board_section {
+    padding: 100px 60px;
+    text-align: center;
+    position: relative;
+}
+
+.red_chili {
+    position: absolute;
+    transform: scale(50%);
+    top: 0;
+    left: -50px;
+    animation-name: sliding;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes sliding {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: -50px;
+    }
+}
+
+.menu_board_title {
+    font-family: var(--title-font);
+    font-size: 38px;
+    margin: 15px 0 15px;
+}
+
+.menu_board_title span {
+    font-size: 38px;
+}
 
 
+/* -------------
+menu board old
+------------- */
+.menu_bord {
+    background-image: url(../assets/images/bg/board_bg_1.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 0  30px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    color: white;
+    margin: 40px 0;
+}
+
+.menu_bord>div {
+    flex-basis: 48%;
+}
+.menu_box {
+    padding: 30px;
+    border: 1px dashed white;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 30px 0;
+    
+}
+
+/* every menu bar title style */
+.menu_bord_title {
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    gap: 15px;
+}
+.menu_bord_title::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #EB0029;
+    display: inline-block;
+
+}
+.menu_bord_title::before {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #EB0029;
+    display: inline-block;
+}
 
 
+/* food_name_price */
+.singel_food_div {
+    text-align: left;
+    margin: 30px 0;
+}
 
+.singel_food_div>span {
+    font-size: 12px;
+}
 
+.food_name_price {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 700;
+    gap: 15px;
+}
 
+.food_price {
+    color: #EB0029;
+    position: relative;
+}
 
+.food_name {
+    display: flex;
+    white-space: nowrap;
+    width: 100%;
+    gap: 15px;
+}
 
-
-
-
-
-
-
-
-
-
+.food_name::after {
+    content: "";
+    width: 100%;
+    border-bottom: 2px dashed gray;
+    display: inline-block;
+    position: relative;
+    top: -10px;
+}
 
 
 
@@ -830,7 +947,6 @@ body {
     align-items: center;
     color: white;
     border-radius: 5px;
-
 }
 
 .hambar-section {
@@ -857,8 +973,6 @@ body {
 .quality-fast-foods{
     padding: 40px 20px;
 }
-
-
 
 .exp >p {
     font-size: 30px;
@@ -957,17 +1071,33 @@ discount bannar
     height: 15px;
 }
 
-
-/* <!-- --------------------------
-    ****************************** 
-    SPECIAL FOOD EVERY TIME
-    *******************************
-    -------------------------- --> */
-
-.special_food_section {
-    padding: 80PX 20PX;
-  
+.menu_board_section{
+    padding: 35px 20px;
 }
+
+.menu_bord{
+    padding: 0;
+    flex-direction: column;
+}
+
+.menu_box  {
+    padding:  10px;
+    margin: 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
