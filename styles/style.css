@@ -434,6 +434,10 @@ body {
     width: 100%;
     height: 100%;
 }
+.discont-card-img-1st img{
+    width: 100%;
+    height: 100%;
+}
 
 .discount-card {
     flex-basis: 31%;
@@ -553,17 +557,17 @@ body {
 
 .healthy_fast_foods_container {
     position: relative;
-    padding-bottom: 500px;
 }
 .two-type-foods-container {
-    margin: 25px 0;
+    margin: 25px 0 0;
     display: grid;
     grid-template-columns:  repeat(7, 1fr);
     column-gap: 40px;
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
-    position: absolute;
+    /* position: absolute; */
+    box-shadow: 0 5px 15px 10px rgba(128, 128, 128, 0.056);
 
 
 }
@@ -573,27 +577,148 @@ body {
 }
 
 #healthyFoodsContainer {
-    opacity: 0;
+    display: none;
 }
-
-#fastFoodsContainer{
-    opacity: 1;
-}
-
-
-
-
-
-
 
 
 .healthy-food-box {
     padding: 30px 50px;
+    cursor: pointer;
 }
 
 .healthy-food-box p {
     margin-top: 15px;
 }
+
+/*---------------------------------
+ food-detaiils-bannar-container 
+ ---------------------------------*/
+ 
+.food-details-bannar-container {
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.food-container{
+    display: flex;
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid rgba(128, 128, 128, 0.626);
+    border-radius: 10px;
+}
+
+/* food_d_img */
+.food_d_img {
+    width: 30%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4c38cca;
+    transition: all .6s;
+}
+.food-container:hover .food_d_img {
+   background-color: #FF9D2D;
+}
+ 
+.food-container .food_d_img img{
+    transition: all .5s;
+    width: 80%;
+}
+.food-container:hover .food_d_img img{
+    transform: scale(110%);
+}
+
+
+
+/* food_info-secion */
+.food_info_section {
+    width: 70%;
+    text-align: left;
+    padding: 20px;
+    display: flex;
+}
+
+
+.food_info {
+
+}
+
+.food_info .food-title {
+    font-size: 22px;
+}
+
+.food_details {
+    font-size: 14px;
+    margin: 10px 0 15px;
+    line-height: 24px;
+}
+
+
+.food-price {
+    font-size: 20px;
+    font-weight: 700;
+    color: #EB0029;
+}
+
+.food-price span{
+    color: gray;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+.food-cart-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 11px;
+}
+
+.rating {
+    color: #FF9D2D;
+}
+
+
+.food-cart {
+    display: flex;
+    gap: 10px;
+}
+
+.food-cart i {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    transition: all .4s;
+}
+.food-cart i:hover {
+    background-color: #EB0029;
+}
+
+.food-cart .active {
+    background-color: #EB0029;
+}
+
+.food-cart .active:hover {
+    background-color:black;
+}
+
+
+
+
+
+
+
 
 
 
@@ -690,28 +815,65 @@ discount bannar
     margin-bottom: 20px;
 }
 
+.discount-descrip .discount-title {
+    font-size: 20px;
+}
+
+.discount-amount {
+    font-size: 15px;
+    line-height: 20px;
+}
  /* --------------------------
     Popular Delicious styles 
     -------------------------*/
 .popular-food-section{
-    padding: 20px 30px;
+    padding: 20px 10px;
 
 }
 
 .foods-cataorys ul li{
     width: 150px;
 }
+.two-type-foods-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 0;
+}
+
+.healthy-food-box{
+    padding: 15px 22px;
+}
 
 
+/* food-details-bannar-container */
+.food-details-bannar-container {
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.food_info .food-title{
+    font-size: 18px;
+}
 
+.food_details  {
+    font-size: 11px;
+    line-height: 15px;
+    margin: 5px 0 10px;
+}
 
+.food-cart {
+    gap: 4px;
+}
+.food-cart-section{
+    font-size: 8px;
+}
 
-
-
-
-
-
-
+.food-cart i {
+    width: 15px;
+    height: 15px;
+}
 
 
 

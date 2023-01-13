@@ -48,13 +48,13 @@ const healthyFoodsContainer = document.getElementById("healthyFoodsContainer");
 
 function rightSide() {
     slider.style.left = "50%";
-    healthyFoodsContainer.style.opacity = "1";
-    fastFoodsContainer.style.opacity = "0";
+    healthyFoodsContainer.style.display = "grid";
+    fastFoodsContainer.style.display = "none";
 }
 
 
 function leftSide() {
     slider.style.left = "0";
-    fastFoodsContainer.style.opacity = "1";
-    healthyFoodsContainer.style.opacity = "0";
+    fastFoodsContainer.style.display = "grid";
+    healthyFoodsContainer.style.display = "none";
 }
