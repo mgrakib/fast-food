@@ -715,6 +715,85 @@ body {
     background-color:black;
 }
 
+/* <!-- --------------------------
+    ****************************** 
+    SPECIAL FOOD EVERY TIME
+    *******************************
+    -------------------------- --> */
+
+.special_food_section {
+    padding: 80PX 60PX;
+    background-image: url(../assets/images/bg/offer_banner_2.jpg);
+    color: white;
+    background-position: center;
+    background-size: cover;
+}
+
+.special_food_subtilte {
+    font-family: var(--style-font);
+    color: #EB0029;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.special_food_title {
+    font-size: 36px;
+    font-weight: 800;
+    margin:  15px 0 12px;
+    font-family: var(--title-font);
+}
+
+.special_food_section>span {
+    font-family: var(--style-font);
+    color: #EB0029;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.special_food_des {
+    width: 50%;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.spacial_food_price {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #EB0029;
+}
+
+.spacial_food_price span {
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.special_food_section .as-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.special_food_section .as-btn::before {
+    background-color: white;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -879,7 +958,16 @@ discount bannar
 }
 
 
+/* <!-- --------------------------
+    ****************************** 
+    SPECIAL FOOD EVERY TIME
+    *******************************
+    -------------------------- --> */
 
+.special_food_section {
+    padding: 80PX 20PX;
+  
+}
 
 
 
