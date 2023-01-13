@@ -608,7 +608,7 @@ body {
     display: flex;
     background-color: white;
     cursor: pointer;
-    border: 1px solid rgba(128, 128, 128, 0.626);
+    border: 1px solid rgba(128, 128, 128, 0.343);
     border-radius: 10px;
 }
 
@@ -645,12 +645,14 @@ body {
 }
 
 
-.food_info {
 
-}
 
 .food_info .food-title {
     font-size: 22px;
+    cursor: pointer;
+}
+.food_info .food-title:hover {
+    color: #EB0029;
 }
 
 .food_details {
@@ -712,9 +714,6 @@ body {
 .food-cart .active:hover {
     background-color:black;
 }
-
-
-
 
 
 
@@ -853,9 +852,13 @@ discount bannar
     border-radius: 10px;
     overflow: hidden;
 }
+
+
+
 .food_info .food-title{
     font-size: 18px;
 }
+
 
 .food_details  {
     font-size: 11px;

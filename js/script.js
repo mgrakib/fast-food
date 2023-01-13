@@ -45,11 +45,16 @@ function showHamsubB() {
 const slider = document.getElementById("slider");
 const fastFoodsContainer = document.getElementById("fastFoodsContainer");
 const healthyFoodsContainer = document.getElementById("healthyFoodsContainer");
+const fastFoodsList = document.getElementById("fastFoodsList");
+const healthyFoodsList = document.getElementById("healthyFoodsList");
+
 
 function rightSide() {
     slider.style.left = "50%";
     healthyFoodsContainer.style.display = "grid";
     fastFoodsContainer.style.display = "none";
+    healthyFoodsList.style.display = "grid";
+    fastFoodsList.style.display = "none";
 }
 
 
@@ -57,4 +62,8 @@ function leftSide() {
     slider.style.left = "0";
     fastFoodsContainer.style.display = "grid";
     healthyFoodsContainer.style.display = "none";
+    fastFoodsList.style.display = "grid";
+    healthyFoodsList.style.display = "none";
 }
+
+
