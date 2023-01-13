@@ -8,6 +8,7 @@ const hambarSubmenuItemsS = document.getElementById("hambarSubmenuItemsS");
 const hambarSubmenuItemsP = document.getElementById("hambarSubmenuItemsP");
 const hambarSubmenuItemsB = document.getElementById("hambarSubmenuItemsB");
 
+
 function hambarClose() {
     hambarSection.style.left = "-100%";
     hambarSection.style.opacity = "0";
@@ -35,4 +36,25 @@ function showHamsubP() {
 }
 function showHamsubB() {
     hambarSubmenuItemsB.style.display = "block";
+}
+
+
+// -------------------------------
+//     healthy and fast food section
+//     -----------------------------
+const slider = document.getElementById("slider");
+const fastFoodsContainer = document.getElementById("fastFoodsContainer");
+const healthyFoodsContainer = document.getElementById("healthyFoodsContainer");
+
+function rightSide() {
+    slider.style.left = "50%";
+    healthyFoodsContainer.style.opacity = "1";
+    fastFoodsContainer.style.opacity = "0";
+}
+
+
+function leftSide() {
+    slider.style.left = "0";
+    fastFoodsContainer.style.opacity = "1";
+    healthyFoodsContainer.style.opacity = "0";
 }
