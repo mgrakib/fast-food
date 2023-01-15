@@ -67,3 +67,45 @@ function leftSide() {
 }
 
 
+// feedback_box
+const one = document.getElementById("one");
+const two = document.getElementById("two");
+const three = document.getElementById("three");
+const four = document.getElementById("four");
+const five = document.getElementById("five");
+const six = document.getElementById("six");
+
+
+
+function slideOne() {
+    one.style.left = "0"
+    two.style.left = "0";
+    three.style.left = "0";
+    four.style.left = "0";
+    five.style.left = "0";
+    six.style.left = "0";
+}
+function slideTwo() {
+    one.style.left = "-111%"
+    two.style.left = "-111%";
+    three.style.left = "-111%";
+    four.style.left = "-111%";
+    five.style.left = "-111%";
+    six.style.left = "-111%";
+}
+function slideThree() {
+    one.style.left = "-222%"
+    two.style.left = "-222%";
+    three.style.left = "-222%";
+    four.style.left = "-222%";
+    five.style.left = "-222%";
+    six.style.left = "-222%";
+}
+function slideFour() {
+    one.style.left = "-333%"
+    two.style.left = "-333%";
+    three.style.left = "-333%";
+    four.style.left = "-333%";
+    five.style.left = "-333%";
+    six.style.left = "-333%";
+}

@@ -1011,7 +1011,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 input {
   background-size: 12%;
-  background-position: right 10px center;
+  background-position: right 22px center;
   background-repeat: no-repeat;
 }
 input[type="date"] {
@@ -1022,6 +1022,9 @@ input[type="time"] {
 }
 input[type="number"] {
   background-image: url(../assets/icons/user.png);
+}
+input[type="number"]::placeholder {
+  font-size: 15px;
 }
 
 .input_section_for_booking textarea {
@@ -1038,6 +1041,142 @@ input[type="number"] {
   background-position: right 10px top 10px;
   outline: none;
 }
+
+
+/* *******************
+Our Customar Feedbacks
+**********************  */
+
+.customers_feedbacks {
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.feedback_subtitle {
+  font-size: 24px;
+  font-family: var(--style-font);
+  color: var(--primary-color);
+  font-weight: 800;
+}
+
+.feedbacks_title {
+  font-family: var(--title-font);
+  color: #010f1c;
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+.feedback_box_container {
+  padding: 20px 2px;
+  overflow: hidden;
+
+  
+}
+#feedbackSliderContainer{
+  display: flex;
+  gap: 43px;
+  width: 31%;
+
+}
+
+
+.feedbackBox {
+  width: 100%;
+  padding: 40px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 5px 2px rgba(128, 128, 128, 0.246);
+  border-radius: 10px;
+  text-align: left;
+  position: relative;
+  flex-shrink: 0;
+  transition: all .2s linear;
+  left: 0;
+}
+
+
+.foddback_img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.user_comment {
+  margin: 20px 0;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 600;
+  color: gray;
+}
+.user_rattin {
+  margin: 20px 0;
+  color: #ff9d2d;
+  font-size: 14px;
+}
+.feedback_profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user_profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.user_profile img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.feedback_profile .user_name p {
+  font-size: 16px;
+  color: gray;
+  margin: 7px 0;
+}
+
+.slide_btn_container {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.slide_btn_container p {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: gray;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all .2s linear;
+  position: relative;
+  
+}
+.slide_btn_container p::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-image: url(../assets/icons/download.svg);
+  border-radius: 50%;
+  position: absolute; 
+  transition: all .2s linear;
+}
+.slide_btn_container p:hover:before {
+  transform: rotate(360deg);
+}
+
+.slide_btn_container p:hover {
+  background-color: #EB0029;
+}
+
+
+
+
+
+
 
 /* -----------------------------------
 **************************************
@@ -1207,7 +1346,7 @@ table booking section
   flex-basis: 100%;
     padding: 20px;
 }
-..opening_time_bord {
+.opening_time_bord {
     padding: 10px;
 }
 
@@ -1216,11 +1355,35 @@ table booking section
 
 }
 
+.red_chili {
+  transform: scale(20%);
+  left: -140px;
+}
 
 
+.opening_time_bord .number {
+  margin-bottom: 20px;
+}
+
+.layer {
+  padding: 57px 20px 20px 20px;
+}
+
+.customers_feedbacks  {
+  padding: 40px 20px;
+}
 
 
+.feedback_box {
+  width: 100%;
 
+}
+
+#feedbackSliderContainer{
+
+  width: 100%;
+
+}
 
 
 
