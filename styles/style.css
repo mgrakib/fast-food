@@ -1047,9 +1047,16 @@ input[type="number"]::placeholder {
 Our Customar Feedbacks
 **********************  */
 
+.latest_new_food {
+  padding: 40px 150px;
+  text-align: center;
+  position: relative;
+}
+
 .customers_feedbacks {
   padding: 80px 60px;
   text-align: center;
+  position: relative;
 }
 
 .feedback_subtitle {
@@ -1068,15 +1075,11 @@ Our Customar Feedbacks
 
 .feedback_box_container {
   padding: 20px 2px;
-  overflow: hidden;
-
-  
 }
 #feedbackSliderContainer{
   display: flex;
   gap: 43px;
   width: 31%;
-
 }
 
 
@@ -1196,6 +1199,229 @@ Our Customar Feedbacks
 .slide_btn_container p:hover {
   background-color: #EB0029;
 }
+
+.img-food {
+  position: absolute;
+  width: 12%;
+  z-index: 50;
+  left: 0;
+  top: 0;
+  animation-name: slider;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes slider {
+  0%{
+    left: 0;
+    top: 0;
+  }
+
+  100%{
+    top: 100px;
+  }
+}
+
+.img-food img {
+  width: 100%;
+}
+
+.img-leaf {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -5;
+  text-align: right;
+  animation-name: sliderlef;
+  animation-duration: 8s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes sliderlef {
+  0%{
+    right: 0;
+    bottom: 0;
+  }
+
+  100%{
+    bottom: 100px;
+  }
+}
+
+.img-leaf img {
+  width: 60%;
+}
+
+
+/* *******************
+Our Latest Foods News
+********************** */
+.latest_new_food {
+  position: relative;
+}
+.latest_food_box_container {
+  display: flex;
+  justify-content: space-between;
+}
+.latest_food_box {
+  width: 31%;
+  box-shadow: 0 0 10px 3px rgba(128, 128, 128, 0.17);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+.latest-food {
+  padding: 80px 60px;
+  text-align: center;
+}
+
+
+.latest_food_box:hover  .news_img img{
+  transform: scale(108%);
+}
+.news_img{
+  overflow: hidden;
+}
+.news_img img{
+  width: 100%;
+  transition: all .5s;
+}
+.text_box {
+  text-align: left;
+}
+
+.food_user {
+  font-size: 12px;
+}
+
+.food_user span:hover {
+  color: #EB0029;
+  cursor: pointer;
+}
+.food_user span i{
+  color: #EB0029;
+}
+
+.news_title {
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.news_title:hover {
+  color: #EB0029;
+}
+
+.read_comment {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid gray;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 5px;
+  font-size: 12px;
+}
+.read_comment p{
+  cursor: pointer;
+  transition: all .3s;
+  position: relative;
+}
+.read_comment p:hover{
+  color: #EB0029;
+}
+
+.read_comment .read::after {
+  content: "";
+  width: 50%;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  top: 105%;
+  transition: all .3s;
+}
+.read_comment .read:hover:after {
+  width: 100%;
+}
+
+.read_comment .comment i {
+  color: #EB0029;
+}
+
+
+.latest_img-food {
+  position: absolute;
+  z-index: 10;
+  left: -50px;
+  transform: scale(50%);
+    animation-name: slider;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes slider {
+  0%{
+    left: -50px;
+    top: 0;
+  }
+
+  100%{
+    top: 100px;
+  }
+}
+
+
+.latest_img-leaf {
+  position: absolute;
+  right: -50px;
+  bottom: 0;
+  z-index: -50;
+  transform: scale(40%);
+  text-align: right;
+  animation-name: sliderlef;
+  animation-duration: 8s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes sliderlef {
+  0%{
+    right: -50px;
+    bottom: 0;
+  }
+
+  100%{
+    bottom: 100px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1395,6 +1621,8 @@ table booking section
 
 .customers_feedbacks  {
   padding: 40px 20px;
+  position: relative;
+  overflow: hidden;
 }
 
 
@@ -1409,14 +1637,27 @@ table booking section
 
 }
 
+.latest_new_food {
+  padding: 20px;
+}
+
+.latest_food_box_container {
+  flex-direction: column;
+}
+.latest_food_box{
+  width: 100%;
+  margin-bottom: 20px;
+}
 
 
+.latest_img-food {
+  display: none;
+}
 
 
-
-
-
-
+.latest_img-leaf {
+  display: none;
+}
 
 
 

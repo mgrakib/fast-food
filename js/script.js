@@ -89,23 +89,23 @@ function slideTwo() {
     one.style.left = "-111%"
     two.style.left = "-111%";
     three.style.left = "-111%";
-    four.style.left = "-111%";
-    five.style.left = "-111%";
-    six.style.left = "-111%";
+    four.style.left = "-112%";
+    five.style.left = "-112%";
+    six.style.left = "-112%";
 }
 function slideThree() {
     one.style.left = "-222%"
     two.style.left = "-222%";
     three.style.left = "-222%";
-    four.style.left = "-222%";
-    five.style.left = "-222%";
-    six.style.left = "-222%";
+    four.style.left = "-223%";
+    five.style.left = "-223%";
+    six.style.left = "-223%";
 }
 function slideFour() {
     one.style.left = "-333%"
     two.style.left = "-333%";
     three.style.left = "-333%";
-    four.style.left = "-333%";
-    five.style.left = "-333%";
-    six.style.left = "-333%";
+    four.style.left = "-334%";
+    five.style.left = "-334%";
+    six.style.left = "-334%";
 }
