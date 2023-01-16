@@ -1341,9 +1341,12 @@ Our Latest Foods News
   left: 0;
   top: 105%;
   transition: all .3s;
+  background-color: #010f1c;
 }
+
 .read_comment .read:hover:after {
   width: 100%;
+  background-color: #EB0029;
 }
 
 .read_comment .comment i {
